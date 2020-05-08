@@ -1,0 +1,58 @@
+Documentation of pushing, cloning and branching using syzygy and github 
+
+-> To share (Push) from syzygy to the remote repository (Github)
+1. Go to terminal on syzygy (control panel -> new -> terminal)
+2. Use ls to see which folder you're in (what it contains)
+3. Use cd to go into a subfolder and cd .. to go back up a folder
+4. Initialize a repository in that folder by command git init
+5. Add files of that folder to the repository by command git add . (mind the space and period)
+6. Good practice to use command git status to check what was added
+7. Use command git commit -m 'book keeping message' as a type of pre-pushing action
+8. Set up the connnection with your github repository by command git remote add origin 'your_github_folder_url'
+  Example: https://username/folder
+9. Use command git push -u origin master
+10. Should be in your github folder
+11. Note that you just have to initialize a repository in the one folder once (step 8)
+  Example: If fatal error occurs stating 'remote origin already exists' then:
+  1. Use command git remote remove origin, then continue from step 8
+  OR
+  2. Ignore error and continue from step 9
+
+-> Order of commands (from above pushing to Github)
+1. git init 
+2. git add . 
+3. git status
+4. git commit -m 'book keeping message'
+5. git remote add origin 'your_github_folder_url'
+6. git push -u origin master
+
+
+-> To push changes to a new branch on the remote repository (Github)
+1. Go to the terminal and into the directory (folder) you what to push
+2. Initialize a repository in that folder by command git init
+3. Create a new branch by command git checkout -b feature_branch_name
+  checkout command switches branches
+  -b command creates new branch
+  More information on this webpage:
+  https://www.freecodecamp.org/forum/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222
+4. Use commands git add . and git status to add the files of that directory to the new branch
+5. Use command git commit -m 'message'
+6. Use command git push -u origin feature_branch_name
+7. Check the new branch on Github which should be there
+8. If there are errors with having permissions to push: please read the following section
+
+-> Invite collaborators
+To give permission for others to push changes to your repository:
+1. Go to the repository on Github
+2. Click on Settings
+3. On the left hand side click on Manage Access
+4. Click on Invite Collaborator
+
+-> To run other people's code on syzygy (CLONE)
+1. Go to terminal and into correct directory
+2. git clone 'url from github'
+
+-> To find other people's code
+1. Use their URL or search up their handle
+
+#test_test_test
