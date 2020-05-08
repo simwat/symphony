@@ -63,6 +63,9 @@ This allows us to use sparse checkout and select subdirectories
 echo is an output function and here we select which directory we want to clone
 repeat command for each separate directories. Mind the spaces.
 6. Run the command git pull origin master
+7. This knowledge sourced from this link 
+https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
+Look for the entry starting with 'What you are trying to do is called a sparse checkout'
 
 -> To find other people's code
 1. Use their URL or search up their handle
