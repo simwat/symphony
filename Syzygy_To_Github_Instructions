@@ -39,7 +39,9 @@ Documentation of 1) pushing, 2) branching and 3) cloning using syzygy and github
 5. Use command git commit -m 'message'
 6. Use command git push -u origin feature_branch_name
 7. Check the new branch on Github which should be there
-8. If there are errors with having permissions to push: please read the following section
+8. If there are errors with having permissions to push: please read the 'Invite collaboratore' section
+9. If there are errors with syzygy branch being 'behind' the github branch, try git pull
+I believe the idea is to push from a folder that contains similar contents as the github folder
 
 -> Invite collaborators
 To give permission for others to push changes to your repository:
