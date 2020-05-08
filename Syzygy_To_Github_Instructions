@@ -1,4 +1,4 @@
-Documentation of pushing, cloning and branching using syzygy and github 
+Documentation of 1) pushing, 2) branching and 3) cloning using syzygy and github 
 
 -> To share (Push) from syzygy to the remote repository (Github)
 1. Go to terminal on syzygy (control panel -> new -> terminal)
@@ -18,7 +18,7 @@ Documentation of pushing, cloning and branching using syzygy and github
   OR
   2. Ignore error and continue from step 9
 
--> Order of commands (from above pushing to Github)
+-> Order of commands (for above, pushing to Github)
 1. git init 
 2. git add . 
 3. git status
@@ -48,9 +48,24 @@ To give permission for others to push changes to your repository:
 3. On the left hand side click on Manage Access
 4. Click on Invite Collaborator
 
--> To run other people's code on syzygy (CLONE)
+-> To clone other people's repository to syzygy 
 1. Go to terminal and into correct directory
-2. git clone 'url from github'
+2. git clone <url from github>
+
+-> To clone ONLY specific folders in other repository
+1. Go to terminal and into correct directory
+2. Use command git init to intialize empty repository
+3. Use command git remote add origin <url> to fetch all objects from remote repository 
+without checking them out
+4. Use command git config core.sparseCheckout true 
+This allows us to use sparse checkout and select subdirectories
+5. Use command echo "directory" >> . git.info.sparse-checkout
+echo is an output function and here we select which directory we want to clone
+repeat command for each separate directories. Mind the spaces.
+6. Run the command git pull origin master
+7. This knowledge sourced from this link 
+https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
+Look for the entry starting with 'What you are trying to do is called a sparse checkout'
 
 -> To find other people's code
 1. Use their URL or search up their handle
