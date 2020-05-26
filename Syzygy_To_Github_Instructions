@@ -28,8 +28,9 @@ Documentation of 1) pushing, 2) branching and 3) cloning using syzygy and github
 
 
 -> To push changes to a new branch on the remote repository (Github)
-1. Go to the terminal and into the directory (folder) you what to push
-2. Initialize a repository in that folder by command git init
+1. Go to the terminal and into the directory that was set up earlier 
+(with origin added - see step 8 of first set 
+2. Initialize a repository in that folder by command git init (not really necessary but doesn't hurt)
 3. Create a new branch by command git checkout -b feature_branch_name
   checkout command switches branches
   -b command creates new branch
