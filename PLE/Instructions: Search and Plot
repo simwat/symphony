@@ -1,7 +1,7 @@
 Instructions to search for past PL data and to plot it through terminal commands!
 
 1) Open up Jupyter Notebooks on the desktop (Should also work in Syzygy but all the data files would have had to be uploaded)
-2) Open a new terminal and go to the folder in which the Search_Spectra.py and Plot_Spectra.py reside (typically it would be in /Documents/PL-folder)
+2) Open a new terminal in Jupyter and go to the folder in which the Search_Spectra.py and Plot_Spectra.py reside (typically it would be in /Documents/PL-folder)
     use the commands cd and ls to navigate through to the right folder/directory
 3) Type 'python Search_Spectra.py'
 4) It will ask for the keyword/sample you are searching for: enter it in the terminal
