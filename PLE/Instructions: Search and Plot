@@ -1,0 +1,16 @@
+Instructions to search for past PL data and to plot it through terminal commands!
+
+1) Open up Jupyter Notebooks on the desktop (Should also work in Syzygy but all the data files would have had to be uploaded)
+2) Open a new terminal and go to the folder in which the Search_Spectra.py and Plot_Spectra.py reside (typically it would be in /Documents/PL-folder)
+    use the commands cd and ls to navigate through to the right folder/directory
+3) Type 'python Search_Spectra.py'
+4) It will ask for the keyword/sample you are searching for: enter it in the terminal
+5) Please wait until is prints out that it has finished search
+6) Highlight with your mouse the filename you would like to plot and copy using a right click
+7) Then type 'python Plot_Spectra.py'
+8) It will ask for the filename for which you want it to plot
+9) Right click and paste the previously selected name: press enter
+10) A new window will be available on the control bar at the bottom of the screen: click on it
+11) A plot will appear, with the PL in meV. You can hover over a spot to see the value at the cursor. You can also save the plot. 
+
+There is it! Quick and elegant search and plot method! 
