@@ -14,3 +14,7 @@ Instructions to search for past PL data and to plot it through terminal commands
 11) A plot will appear, with the PL in meV. You can hover over a spot to see the value at the cursor. You can also save the plot. 
 
 There is it! Quick and elegant search and plot method! 
+
+Similarly, for XRD data searches, the same procedure applies.
+Simply replace Search_Spectra.py with Search_XRD.py
+Then replace Plot_Spectra.py with Plot_XRD.py
