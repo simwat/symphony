@@ -10,9 +10,9 @@ import matplotlib.pyplot as plt
 #import plotly.graph_objects as go
 
 #E = hc/lambda in eV calculations
-h = 6.6261*10**(-34) # m^2kg/s
-c = 2.9979*10**8 # m/s
-eV = 1.6022*10**(-19) # J
+h = 6.62606891*10**(-34) # m^2kg/s
+c = 299792458 # m/s
+eV = 1.602176634*10**(-19) # J
 Conversion = h*c/eV
 
 FileNames = input('Please enter the filepath followed by the filename you would like to plot: ')
